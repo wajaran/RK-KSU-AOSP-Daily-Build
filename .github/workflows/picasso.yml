@@ -19,6 +19,7 @@ jobs:
         github-server-url: 'https://github.com'
         repository: EndCredits/kernel_xiaomi_sm7250
         ref: android-4.19-main
+        submodules: true
         path: android-kernel
       
     - name: Setup Build Environment
@@ -37,7 +38,8 @@ jobs:
     - name: Setup KernelSU
       run: |
         cd android-kernel
-        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+        #curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+        git submodule update --remote
         
     - name: Build Kernel
       run: |
