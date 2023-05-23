@@ -1,4 +1,4 @@
-name: Build Driftwood Kernel for Picasso
+name: Build Picasso-day
 
 on: 
 
