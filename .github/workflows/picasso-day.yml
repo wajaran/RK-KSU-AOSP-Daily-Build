@@ -76,9 +76,9 @@ jobs:
 
         cd android-kernel
 
-        #curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
 
-        git submodule update --remote
+        #git submodule update --remote
 
         
 
