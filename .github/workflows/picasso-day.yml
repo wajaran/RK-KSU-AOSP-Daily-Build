@@ -75,6 +75,10 @@ jobs:
       run: |
 
         cd android-kernel
+        
+        rm -rf KernelSU
+
+        rm -rf drivers/kernelsu
 
         curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
 
